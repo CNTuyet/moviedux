@@ -55,6 +55,7 @@ body {
 /* Movies Grid Styles */
 .movies-grid, .watchlist {
   display: grid;
+  /* các cột sẽ được tạo tự động, với chiều rộng tối đa là 250px */
   grid-template-columns: repeat(auto-fill, 250px);
   gap: 2rem 2rem;  
   padding: 1rem;
