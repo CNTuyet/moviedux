@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import MovieCard from './MovieCard';
 
-const MoviesGrid = () => {
-    const [movies, setMovies] = useState([]);
-
+const MoviesGrid = ({ movies, watchlist, toggleWatchlist }) => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const [genre, setGenre] = useState("All Genres");
@@ -50,12 +48,6 @@ const MoviesGrid = () => {
         matchesRating(movie, rating) &&
         matchesSearchTerm(movie, searchTerm)
     );
-    useEffect(() => {
-        //Lấy data từ file json trong folder public, sau đó lấy data set cho movies
-        fetch("movies.json")
-            .then(response => response.json())
-            .then(data => setMovies(data));
-    }, []);
     return (
         <div>
             <input
@@ -89,7 +81,11 @@ const MoviesGrid = () => {
             <div className='movies-grid'>
                 {
                     filterMovies.map(item => (
-                        <MovieCard movie={item} key={item.id} />
+                        <MovieCard
+                            movie={item}
+                            isWatchlisted={watchlist.includes(item.id)}
+                            toggleWatchlist={toggleWatchlist}
+                            key={item.id} />
                     ))
                 }
             </div>
