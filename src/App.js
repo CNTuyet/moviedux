@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import MoviesGrid from './components/MoviesGrid';
 import Watchlist from './components/Watchlist';
+import MovieDetail from './components/MovieDetail';
 import './styles.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -31,16 +32,17 @@ function App() {
       <div className='container'>
         <Header />
         <Router>
-          <nav>
-            <ul>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/watchlist'>Watchlist</Link></li>
-            </ul>
-          </nav>
+            <nav>
+                <ul>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/watchlist'>Watchlist</Link></li>
+                </ul>
+            </nav>
           {/* Định nghĩa các đường dẫn, khi truy cập đúng path, element sẽ được hiển thị */}
           <Routes>
             <Route path='/' element={<MoviesGrid movies={movies} watchlist={watchlist} toggleWatchlist={toggleWatchlist} />}></Route>
             <Route path='/watchlist' element={<Watchlist movies={movies} watchlist={watchlist} toggleWatchlist={toggleWatchlist} />}></Route>
+            <Route path="/:title" element={<MovieDetail movies={movies} watchlist={watchlist} toggleWatchlist={toggleWatchlist}/>} />
           </Routes>
         </Router>
       </div>

@@ -4,139 +4,159 @@
     "title": "Dark Storm",
     "image": "1.jpg",
     "genre": "drama",
-    "rating": "8.3"
+    "rating": "8.3",
+    "description": "A gripping tale of resilience in the face of overwhelming odds."
   },
   {
     "id": 2,
     "title": "Whisper of Fate",
     "image": "2.jpg",
     "genre": "fantasy",
-    "rating": "7.7"
+    "rating": "7.7",
+    "description": "An enchanting journey through a mystical realm where destinies intertwine."
   },
   {
     "id": 3,
     "title": "Beyond the Edge",
     "image": "3.jpg",
     "genre": "horror",
-    "rating": "6.3"
+    "rating": "6.3",
+    "description": "A chilling exploration of fear that lurks just beyond the familiar."
   },
   {
     "id": 4,
     "title": "Lost in Shadows",
     "image": "4.jpg",
     "genre": "action",
-    "rating": "9.3"
+    "rating": "9.3",
+    "description": "An adrenaline-pumping adventure filled with unexpected twists."
   },
   {
     "id": 5,
     "title": "Echoes of Power",
     "image": "5.jpg",
     "genre": "fantasy",
-    "rating": "6.9"
+    "rating": "6.9",
+    "description": "A quest for ancient artifacts that could change the course of history."
   },
   {
     "id": 6,
     "title": "Grim Reckoning",
     "image": "6.jpg",
     "genre": "drama",
-    "rating": "8.4"
+    "rating": "8.4",
+    "description": "A poignant reflection on choices and their irrevocable consequences."
   },
   {
     "id": 7,
     "title": "Fury's Flight",
     "image": "7.jpg",
     "genre": "action",
-    "rating": "9.8"
+    "rating": "9.8",
+    "description": "A high-octane thrill ride that tests the limits of endurance and courage."
   },
   {
     "id": 8,
     "title": "Path of the Forgotten",
     "image": "8.jpg",
     "genre": "action",
-    "rating": "7.2"
+    "rating": "7.2",
+    "description": "A daring expedition into the unknown, where every step could be perilous."
   },
   {
     "id": 9,
     "title": "Nightmare's Threshold",
     "image": "9.jpg",
     "genre": "horror",
-    "rating": "1.7"
+    "rating": "1.7",
+    "description": "A descent into madness, where reality blurs with terrifying nightmares."
   },
   {
     "id": 10,
     "title": "Eternal Hunt",
     "image": "10.jpg",
     "genre": "fantasy",
-    "rating": "7.5"
+    "rating": "7.5",
+    "description": "A timeless saga of love and betrayal set against a backdrop of magic."
   },
   {
     "id": 11,
     "title": "Legacy of the Void",
     "image": "11.jpg",
     "genre": "action",
-    "rating": "8.5"
+    "rating": "8.5",
+    "description": "An epic battle for survival against dark forces that threaten the universe."
   },
   {
     "id": 12,
     "title": "Shadow's Crescent",
     "image": "12.jpg",
     "genre": "horror",
-    "rating": "7.5"
+    "rating": "7.5",
+    "description": "A haunting tale that explores the darker sides of human nature."
   },
   {
     "id": 13,
     "title": "Crimson Dawn",
     "image": "13.jpg",
     "genre": "fantasy",
-    "rating": "8.4"
+    "rating": "8.4",
+    "description": "A gripping saga of power struggles in a world ruled by magic."
   },
   {
     "id": 14,
     "title": "Silent Kingdom",
     "image": "14.jpg",
     "genre": "fantasy",
-    "rating": "6.5"
+    "rating": "6.5",
+    "description": "A tranquil yet mysterious land hides secrets that could alter its fate."
   },
   {
     "id": 15,
     "title": "Mystic Rite",
     "image": "15.jpg",
     "genre": "fantasy",
-    "rating": "9.8"
+    "rating": "9.8",
+    "description": "A breathtaking adventure that merges ancient magic with modern challenges."
   },
   {
     "id": 16,
     "title": "Reign of the Lost",
     "image": "16.jpg",
     "genre": "horror",
-    "rating": "9.1"
+    "rating": "9.1",
+    "description": "A terrifying journey through abandoned realms filled with lost souls."
   },
   {
     "id": 17,
     "title": "Timeless Myth",
     "image": "17.jpg",
     "genre": "drama",
-    "rating": "4.0"
+    "rating": "4.0",
+    "description": "A reflective narrative that questions the essence of myth in modern life."
   },
   {
     "id": 18,
     "title": "Oath of the Fallen",
     "image": "18.jpg",
     "genre": "fantasy",
-    "rating": "6.3"
+    "rating": "6.3",
+    "description": "A story of loyalty and sacrifice in a world where magic reigns."
   },
   {
     "id": 19,
     "title": "Veil of Night",
     "image": "19.jpg",
     "genre": "drama",
-    "rating": "9.5"
+    "rating": "9.5",
+    "description": "A beautifully crafted narrative about love and loss under the stars."
   },
   {
     "id": 20,
     "title": "Guardians of Twilight",
     "image": "20.jpg",
     "genre": "horror",
-    "rating": "7.4"
+    "rating": "7.4",
+    "description": "A suspenseful tale of protection against the encroaching darkness."
   }
 ]
