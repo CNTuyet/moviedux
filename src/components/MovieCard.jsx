@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import '../styles.css'
 
 const MovieCard = ({ movie, isWatchlisted, toggleWatchlist }) => {
@@ -6,6 +7,8 @@ const MovieCard = ({ movie, isWatchlisted, toggleWatchlist }) => {
         // khi tên src ảnh bị lỗi thì hiển thị ảnh default
         e.target.src = "images/default.jpg";
     }
+
+    const navigate = useNavigate();
 
     const getRatingClass = (rating) => {
         if (rating > 8) {
@@ -20,8 +23,16 @@ const MovieCard = ({ movie, isWatchlisted, toggleWatchlist }) => {
         };
     }
 
+    const handleClick = () => {
+        const slug = movie.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+        navigate(`/${slug}`, { state: { movieId: movie.id } });
+    };
+
     return (
-        <div key={movie.id} className='movie-card'>
+        <div 
+        onClick={ ()=>{handleClick()}}
+        key={movie.id} 
+        className='movie-card'>
             <img
                 src={`images/${movie.image}`}
                 alt={movie.title}
@@ -34,10 +45,11 @@ const MovieCard = ({ movie, isWatchlisted, toggleWatchlist }) => {
                 </div>
                 <label className='switch'>
                     <input
+                        onClick={(e)=> {e.stopPropagation();}}
                         type="checkbox"
                         checked={isWatchlisted}
                         onChange={() => toggleWatchlist(movie.id)} />
-                    <span className='slider'>
+                    <span className='slider' onClick={(e)=> {e.stopPropagation();}}>
                         <span className='slider-label'>{isWatchlisted ? "In Watchlist" : "Add To Watchlist"}</span>
                     </span>
                 </label>
